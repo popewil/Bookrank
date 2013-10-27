@@ -3,6 +3,7 @@
 # IDE configur #
 .idea
 *.iml
+target
 
 # Package Files #
 *.jar
