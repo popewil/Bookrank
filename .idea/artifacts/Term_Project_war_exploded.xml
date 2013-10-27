@@ -2,10 +2,10 @@
   <artifact type="exploded-war" build-on-make="true" name="Term Project:war exploded">
     <output-path>$PROJECT_DIR$/target/Term Project</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Term Project/web/Web" />
+      <element id="javaee-facet-resources" facet="Bookrank/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Term Project" />
+          <element id="module-output" name="Bookrank" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.0.RELEASE" />
