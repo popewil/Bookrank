@@ -1,4 +1,4 @@
-package example;
+package com.wpope2.rest;
 import com.sun.net.httpserver.HttpServer;
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import java.io.IOException;
@@ -7,27 +7,17 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Path;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Twister
- * Date: 10/26/13
- * Time: 1:29 PM
- * To change this template use File | Settings | File Templates.
- */
-// The Java class will be hosted at the URI path "/helloworld"
-@Path("/helloworld")
-public class HelloWorld {
-    // The Java method will process HTTP GET requests
+@Path("/test")
+public class BookDetailResource {
+
     @GET
-    // The Java method will produce content identified by the MIME Media type "text/plain"
     @Produces("text/plain")
     public String getClichedMessage() {
-        // Return some cliched textual content
-        return "Hello Worlda";
+        return "Hello World";
     }
 
     public static void main(String[] args) throws IOException {
-        HttpServer server = HttpServerFactory.create("http://localhost:8080/");
+        HttpServer server = HttpServerFactory.create("http://localhost:9998/");
         server.start();
 
         System.out.println("Server running");
