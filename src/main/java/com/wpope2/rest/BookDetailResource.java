@@ -7,7 +7,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Path;
 
-@Path("/test")
+@Path("/services")
 public class BookDetailResource {
 
     @GET
